@@ -5,7 +5,7 @@
   <img   width="100px" height="100px" [src]="x.image" alt="{{ x.title }}">
   <li>{{x.title}}</li>
   <li>Price :${{x.price}}</li>
-  <a class="btn" [routerLink]="['/shop-single/', x.id]">View Details</a>
+  <a class="btn" [routerLink]="['/View/', x.id]">View Details</a>
   <button class="btn" (click)="remove(x.id)">remove</button>
   <hr>
 </ul>
