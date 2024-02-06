@@ -1,0 +1,12 @@
+<p>shop-cart works!</p>
+<div class="container">
+  <h3 class="text-center my-5">Your Product-Cart</h3>
+<ul *ngFor="let x of productscart">
+  <img   width="100px" height="100px" [src]="x.image" alt="{{ x.title }}">
+  <li>{{x.title}}</li>
+  <li>Price :${{x.price}}</li>
+  <a class="btn" [routerLink]="['/View/', x.id]">View Details</a>
+  <button class="btn" (click)="remove(x.id)">remove</button>
+  <hr>
+</ul>
+</div>

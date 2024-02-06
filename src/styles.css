@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+.danger{
+  color: red;
+}
+
+.far:hover,.fas:hover{
+  color: black !important;
+}
+.far:active,.fas:active{
+color: brown !important;
+}
+button:hover{
+  color: black !important;
+}
